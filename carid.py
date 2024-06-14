@@ -1,8 +1,5 @@
 import streamlit as st
 import numpy as np
-import matplotlib.pyplot as plt
-import os
-import scipy.io
 from scipy.optimize import minimize
 from skimage.transform import resize
 from matplotlib.image import imread

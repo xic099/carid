@@ -58,12 +58,12 @@ uploaded_file = st.file_uploader("选择图片文件", type=["png", "jpg", "jpeg
 if uploaded_file is not None:
     # 使用PIL读取上传的文件
     image = Image.open(uploaded_file)
-    image_resized = image.resize((1200, 1200), Image.ANTIALIAS)
+    #image_resized = image.resize((1200, 1200), Image.ANTIALIAS)
 
     waiting_message = "请等待，正在识别中..."
     waiting_placeholder.markdown(waiting_message)
 
-    st.image(image_resized, caption='上传的图片',    use_column_width=True)
+    st.image(image, caption='上传的图片',    use_column_width=True)
 
     # 车辆识别
 
